@@ -15,11 +15,17 @@ cryptocurrency project whose devs and users are particularly target-able for
 certain kinds of package attacks like the one seen on the `event-stream`
 package. As such, we seek to minimize the NPM attack surface.
 
-### Why not use shrinkwrap or bundledDependencies?
+### Why not use shrinkwrap and/or bundledDependencies?
 
 Bundling the dependencies directly allows one to clone directly from github
 without having to run `npm install`. We are aiming to minimize reliance on NPM
 altogether.
+
+### Why not bundle it?
+
+JSDoc is difficult to bundle into a single file due to its use of dynamic
+requires. Until someone takes the time to rid the entire codebase of all
+dynamic requires, this is the best we can do.
 
 ## Usage
 
