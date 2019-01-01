@@ -1,8 +1,32 @@
 # bdoc
 
-Vendored jsdoc.
+A zero-dependency package which vendors [JSDoc][jsdoc] and all of its
+dependencies for security and simplicity.
+
+bdoc makes use of the fact that NPM allows non-toplevel `node_modules`
+directories to be packaged. It follows the same versioning scheme as jsdoc:
+e.g. `bdoc@3.5.5` should be equivalent to `jsdoc@3.5.5`.
+
+## Reasoning
+
+bdoc is simply a snapshot of the official jsdoc NPM package. It was
+specifically created for the [bcoin] development cycle. Bcoin is a
+cryptocurrency project whose devs and users are particularly target-able for
+certain kinds of package attacks like the one seen on the `event-stream`
+package. As such, we seek to minimize the NPM attack surface.
+
+## Usage
+
+Note that this module will provide the `jsdoc` command. This will conflict
+with the regular `jsdoc` install.
+
+``` bash
+$ jsdoc -h
+```
 
 ## License
+
+JSDoc license
 
 ```
 JSDoc 3 is free software, licensed under the Apache License, Version 2.0 (the
@@ -108,3 +132,32 @@ Copyright (c) 2016 Yoshihide Jimbo.
 The source code for the Tomorrow Theme is available at:
 https://github.com/jmblog/color-themes-for-google-code-prettify
 ```
+
+bdoc license
+
+```
+This software is licensed under the MIT License.
+
+Copyright (c) 2018, Christopher Jeffrey (https://github.com/chjj)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+```
+
+[jsdoc]: http://usejsdoc.org/
+[bcoin]: https://github.com/bcoin-org

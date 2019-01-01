@@ -1,7 +1,7 @@
 {
   "name": "bdoc",
-  "version": "3.5.5",
-  "description": "Vendored jsdoc",
+  "version": "0.0.0",
+  "description": "zero-dependency jsdoc",
   "keywords": [
     "jsdoc"
   ],
