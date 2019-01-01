@@ -1,4 +1,4 @@
-# bsdoc
+# bdoc
 
 Vendored jsdoc.
 

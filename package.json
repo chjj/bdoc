@@ -1,15 +1,15 @@
 {
-  "name": "bsdoc",
+  "name": "bdoc",
   "version": "3.5.5",
   "description": "Vendored jsdoc",
   "keywords": [
     "jsdoc"
   ],
   "license": "Apache-2.0",
-  "repository": "git://github.com/chjj/bsdoc.git",
-  "homepage": "https://github.com/chjj/bsdoc",
+  "repository": "git://github.com/chjj/bdoc.git",
+  "homepage": "https://github.com/chjj/bdoc",
   "bugs": {
-    "url": "https://github.com/chjj/bsdoc/issues"
+    "url": "https://github.com/chjj/bdoc/issues"
   },
   "author": "Christopher Jeffrey <chjjeffrey@gmail.com>",
   "main": "./index.js",
