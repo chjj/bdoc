@@ -18,5 +18,24 @@
   },
   "engines": {
     "node": ">=4.2.0"
-  }
+  },
+  "bundledDependencies": [
+    "babylon",
+    "bluebird",
+    "catharsis",
+    "escape-string-regexp",
+    "graceful-fs",
+    "js2xmlparser",
+    "jsdoc",
+    "klaw",
+    "marked",
+    "minimist",
+    "mkdirp",
+    "requizzle",
+    "strip-json-comments",
+    "taffydb",
+    "underscore",
+    "underscore-contrib",
+    "xmlcreate"
+  ]
 }

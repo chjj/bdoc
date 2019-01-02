@@ -2,4 +2,4 @@
 
 'use strict';
 
-module.exports = require("../vendor/node_modules/jsdoc/jsdoc.js");
+module.exports = require("../node_modules/jsdoc/jsdoc.js");
