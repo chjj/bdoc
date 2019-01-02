@@ -3,9 +3,8 @@
 A zero-dependency package which vendors [JSDoc][jsdoc] and all of its
 dependencies for security and simplicity.
 
-bdoc makes use of the fact that NPM allows non-toplevel `node_modules`
-directories to be packaged. It follows the same versioning scheme as jsdoc:
-e.g. `bdoc@3.5.5` should be equivalent to `jsdoc@3.5.5`.
+bdoc follows the same versioning scheme as jsdoc: e.g. `bdoc@3.5.5` should be
+equivalent to `jsdoc@3.5.5`.
 
 ## Reasoning
 
@@ -15,7 +14,7 @@ cryptocurrency project whose devs and users are particularly target-able for
 certain kinds of package attacks like the one seen on the `event-stream`
 package. As such, we seek to minimize the NPM attack surface.
 
-### Why not use shrinkwrap and/or bundleDependencies?
+### Why not use shrinkwrap?
 
 Bundling the dependencies directly allows one to clone directly from github
 without having to run `npm install`. We are aiming to minimize reliance on NPM
